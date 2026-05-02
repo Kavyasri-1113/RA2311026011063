@@ -1,0 +1,98 @@
+/* universal reset-ish thing… honestly just here to avoid weird sizing bugs */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  /* dark theme for now — might tweak later */
+  background: #14151c;
+  color: #fff;
+
+  font-family: Arial, sans-serif; /* safe fallback, nothing fancy */
+}
+
+/* main wrapper */
+.container {
+  max-width: 520px;
+  margin: 40px auto;   /* centers it horizontally */
+  padding: 30px;
+  text-align: center;
+
+  /* simple border — not 100% sure about this design yet */
+  border: 1px solid #cfcfcf;
+  border-radius: 12px;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  margin-top: 0; /* just to be explicit */
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 25px;
+  font-size: 26px;
+}
+
+h3 {
+  margin-top: 22px;
+  color: #b8c7dc; /* slightly muted */
+}
+
+/* inputs — kept them simple for now */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 9px 0;
+
+  border: 1px solid #aaa;
+  border-radius: 6px;
+
+  background-color: #333; /* darker input */
+  color: white;
+  font-size: 15px;
+
+  /* might add focus styles later */
+}
+
+/* buttons could probably use hover effects… leaving for later */
+button {
+  padding: 12px 28px;
+  margin-top: 15px;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 7px;
+
+  background: #0d6efd;
+  color: #fff;
+
+  font-size: 15px;
+}
+
+/* paragraph text — toned down a bit */
+p {
+  font-size: 16px;
+  color: #b8c7dc;
+}
+
+/* tokens can get insanely long so forcing breaks */
+.token {
+  word-break: break-all;
+  line-height: 1.6;
+  font-size: 15px;
+
+  /* NOTE: might switch to overflow-wrap later if this looks weird */
+}
+
+
+/* random thought: maybe add a subtle shadow to container? 
+.container {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+*/
